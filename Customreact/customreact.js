@@ -7,7 +7,7 @@ const reactelement={
     },
     Children:"visit google"
 }
-const maincontainer = document.getElementById('#root');
+const maincontainer = document.getElementById('root');
 
 
 /*
