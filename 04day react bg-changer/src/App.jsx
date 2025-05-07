@@ -4,32 +4,51 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [color, setcolor] = useState("olive")
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+   <div className="h-screen"
+    style={{backgroundColor: color }} >
+      <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2'>
+        <div
+        className='flex flex-wrap justify-center bg-white gap-3 px-2 py-2 rounded-xl'>
+          <button
+          onClick={() => setcolor("red")  }
+          className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+          style={{backgroundColor: 'red'}}>Click Me</button>
+           <button
+           onClick={() => setcolor("green")}
+          className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+          style={{backgroundColor: 'green'}}>Click Me</button>
+           <button
+           onClick={() => setcolor("blue")}
+          className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+          style={{backgroundColor: 'blue'}}>Click Me</button>
+            <button
+            onClick={() => setcolor("yellow")}
+            className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+            style={{backgroundColor: 'yellow'}}>Click Me</button>
+            <button
+            onClick={() => setcolor("purple")}
+            className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+            style={{backgroundColor: 'purple'}}>Click Me</button>
+            <button
+            onClick={() => setcolor("pink")}
+            className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+            style={{backgroundColor: 'pink'}}>Click Me</button>
+            <button
+            onClick={() => setcolor("black")}
+            className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+            style={{backgroundColor: 'black'}}>Click Me</button>
+            <button
+            onClick={() => setcolor("white")} 
+            className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
+            style={{backgroundColor: 'white'}}>Click Me</button>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+   </div>
+    
   )
 }
-
 export default App
