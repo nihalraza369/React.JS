@@ -28,4 +28,4 @@ function App({username, intro="Developer"}) {
   )
 }
 
-export default App
+export default App;
