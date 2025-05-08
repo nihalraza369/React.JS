@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [color, setcolor] = useState("olive")
+  let text = "nihal"
 
   return (
     
@@ -14,7 +15,7 @@ function App() {
         <div
         className='flex flex-wrap justify-center bg-white gap-3 px-2 py-2 rounded-xl'>
           <button
-          onClick={() => setcolor("red")  }
+          onClick={() => setcolor("red",{text})}  
           className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
           style={{backgroundColor: 'red'}}>Click Me</button>
            <button
